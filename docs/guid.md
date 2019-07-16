@@ -13,7 +13,8 @@ __init__(self,unicode) -> None
 Generate(self) -> bool
 Clear(self) -> None
 ToUniString(self) -> unicode
-ConvertFromString(self,unicode) -> bool
+ConvertFromString(self,unicode) -> GSErrCode
+ConvertFromPrefixString(self,GS.UniString) -> GSErrCode
 Invert(self) -> Guid
 IsEqual(self,right) -> bool
 IsNull(self) ->bool
@@ -24,6 +25,7 @@ __ne__(self,right) -> bool
 __lt__(self,right) -> bool
 __gt__(self,right) -> bool
 __le__(self,right) -> bool
+__ge__(self,right) -> bool
 GetHashValue(self) -> ushort
 GetPrefix(self) -> uint32
 SetPrefix(self,uint32) -> None
