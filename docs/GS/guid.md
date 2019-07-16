@@ -14,8 +14,8 @@ __init__(self,unicode) -> None
 Generate(self) -> bool
 Clear(self) -> None
 ToUniString(self) -> unicode
-ConvertFromString(self,unicode) -> GSErrCode
-ConvertFromPrefixString(self,unicode) -> GSErrCode
+ConvertFromString(self,unicode) -> bool
+ConvertFromPrefixString(self,unicode) -> bool
 Invert(self) -> Guid
 IsEqual(self,Guid) -> bool
 IsNull(self) ->bool
