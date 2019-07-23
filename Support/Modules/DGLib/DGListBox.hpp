@@ -368,7 +368,6 @@ public:
 	~ListBoxHeaderItemClickEvent ();
 
 	ListBox*	GetSource (void) const;
-
 	short	GetHeaderItem (void) const;
 };
 

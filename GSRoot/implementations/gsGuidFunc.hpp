@@ -1,18 +1,19 @@
+#pragma once
+
 #include "../stdafx.h"
 
 #include "GSGuid.hpp"
 
-#include "ACCast.h"
-
 using namespace GS;
+
+
+// --- Guid -------------------------------------------------------------------------------
 
 void load_gs_Guid(py::module m) {
 	py::class_<Guid>(m, "Guid")
 		.def(py::init<>())
-		.def(py::init<char *>())
 		.def(py::init<UniString &>())
 		//.def(py::self = py::self)
-		
 		.def("Generate", [](Guid &self) { 
 			return self.Generate() == NoError;
 		})
@@ -31,16 +32,13 @@ void load_gs_Guid(py::module m) {
 			return self.Compare(rightOp) == NoError;
 		})
 		.def("HasPrefix", &Guid::HasPrefix)
-
 		.def(py::self == py::self)
 		.def(py::self != py::self)
 		.def(py::self < py::self)
 		.def(py::self > py::self)
 		.def(py::self <= py::self)
 		.def(py::self >= py::self)
-
 		.def("GetHashValue", &Guid::GetHashValue)
-
 		.def("GetPrefix", &Guid::GetPrefix)
 		.def("SetPrefix", &Guid::SetPrefix);
 }
