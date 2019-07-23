@@ -12,6 +12,18 @@ using namespace Gfx;
 
 void load_gs_Color(py::module m) {
 	py::class_<Color>(m, "Color")
+		.def_readonly_static("Black",&Color::Black)
+		.def_readonly_static("DarkGray", &Color::DarkGray)
+		.def_readonly_static("Gray", &Color::Gray)
+		.def_readonly_static("LightGray", &Color::LightGray)
+		.def_readonly_static("White", &Color::White)
+		.def_readonly_static("Red", &Color::Red)
+		.def_readonly_static("Green", &Color::Green)
+		.def_readonly_static("Blue", &Color::Blue)
+		.def_readonly_static("Cyan", &Color::Cyan)
+		.def_readonly_static("Magenta", &Color::Magenta)
+		.def_readonly_static("Yellow", &Color::Yellow)
+
 		.def(py::init<>())
 		.def(py::init<UChar, UChar, UChar, UChar>(),
 			py::arg("r"),
