@@ -35,11 +35,15 @@ void load_gs_Color(py::module m) {
 		.def("SetGreen", (void (Color::*)(UChar)) &Color::SetGreen)
 		.def("SetBlue", (void (Color::*)(UChar)) &Color::SetBlue)
 		.def("SetAlpha", (void (Color::*)(UChar)) &Color::SetAlpha)
-		.def("GetRed", (UChar(Color::*)(void)const) &Color::GetRed)
-		.def("GetGreen", (UChar(Color::*)(void)const) &Color::GetGreen)
-		.def("GetBlue", (UChar(Color::*)(void)const) &Color::GetBlue)
-		.def("GetAlpha", (UChar(Color::*)(void)const) &Color::GetAlpha)
+		.def("GetRed", (UChar (Color::*)(void) const) &Color::GetRed)
+		.def("GetGreen", (UChar (Color::*)(void) const) &Color::GetGreen)
+		.def("GetBlue", (UChar (Color::*)(void) const) &Color::GetBlue)
+		.def("GetAlpha", (UChar (Color::*)(void) const) &Color::GetAlpha)
 		.def(py::self == py::self)
-		.def(py::self != py::self);
+		.def(py::self != py::self)
+
+		.def("__str__", [](const Color &c) {
+		return "Color = ("+ std::to_string(c.GetAlpha()) + "," + std::to_string(c.GetRed()) + "," + std::to_string(c.GetGreen()) + "," + std::to_string(c.GetBlue())  +")"; });
+
 }
 

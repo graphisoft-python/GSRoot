@@ -40,7 +40,9 @@ void load_gs_Guid(py::module m) {
 		.def(py::self >= py::self)
 		.def("GetHashValue", &Guid::GetHashValue)
 		.def("GetPrefix", &Guid::GetPrefix)
-		.def("SetPrefix", &Guid::SetPrefix);
+		.def("SetPrefix", &Guid::SetPrefix)
+		.def("__str__", [](const Guid &g) {
+		return "Guid = (" + g.ToUniString() + ")"; });
 }
 
 
