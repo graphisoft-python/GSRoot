@@ -9,11 +9,8 @@ PYBIND11_MODULE(GSRoot, m) {
 
 	m.def("version", []() {	return "version 0.0.2"; });
 
-	// --- Add bindings here ------------------------------------------------------------------
+// --- Add bindings here ------------------------------------------------------------------
 
-	m.def("foo", []() {
-		return "Hello, World! GSRoot";
-	});
 
 // --- GSGuid
 	load_gs_Guid(m);
@@ -21,5 +18,5 @@ PYBIND11_MODULE(GSRoot, m) {
 // --- Color
 	load_gs_Color(m);
 
-	// --- Add bindings end -------------------------------------------------------------------
+// --- Add bindings end -------------------------------------------------------------------
 }
