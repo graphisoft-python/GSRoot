@@ -2,12 +2,21 @@
 #include "../stdafx.h"
 
 #include "../implementations/gsGuidFunc.hpp"
+#include "../implementations/gsColorFunc.hpp"
+
 
 PYBIND11_MODULE(GSRoot, m) {
-	// Add bindings here
-	m.def("version", []() {
-		return "0.0.1 Beta";
-	});
 
+	m.def("version", []() {	return "version 0.0.2"; });
+
+// --- Add bindings here ------------------------------------------------------------------
+
+
+// --- GSGuid
 	load_gs_Guid(m);
+
+// --- Color
+	load_gs_Color(m);
+
+// --- Add bindings end -------------------------------------------------------------------
 }
