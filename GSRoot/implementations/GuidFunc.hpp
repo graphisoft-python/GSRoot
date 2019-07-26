@@ -9,7 +9,7 @@ using namespace GS;
 
 // --- Guid -------------------------------------------------------------------------------
 
-void load_gs_Guid(py::module m) {
+void load_Guid(py::module m) {
 	py::class_<Guid>(m, "Guid")
 		.def(py::init<>())
 		.def(py::init<UniString &>())

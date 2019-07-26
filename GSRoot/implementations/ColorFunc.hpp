@@ -10,7 +10,7 @@ using namespace Gfx;
 
 // --- Color -------------------------------------------------------------------------------
 
-void load_gs_Color(py::module m) {
+void load_Color(py::module m) {
 	py::class_<Color>(m, "Color")
 		.def_readonly_static("Black",&Color::Black)
 		.def_readonly_static("DarkGray", &Color::DarkGray)

@@ -1,8 +1,8 @@
 ﻿// GSRoot.cpp : 定义 DLL 应用程序的导出函数。
 #include "../stdafx.h"
 
-#include "../implementations/gsGuidFunc.hpp"
-#include "../implementations/gsColorFunc.hpp"
+#include "../implementations/GuidFunc.hpp"
+#include "../implementations/ColorFunc.hpp"
 
 
 PYBIND11_MODULE(GSRoot, m) {
@@ -16,10 +16,10 @@ PYBIND11_MODULE(GSRoot, m) {
 	});
 
 // --- GSGuid
-	load_gs_Guid(m);
+	load_Guid(m);
 
 // --- Color
-	load_gs_Color(m);
+	load_Color(m);
 
 	// --- Add bindings end -------------------------------------------------------------------
 }
