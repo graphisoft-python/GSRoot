@@ -3,6 +3,9 @@
 
 #include "../implementations/GuidFunc.hpp"
 #include "../implementations/ColorFunc.hpp"
+#include "../implementations/PatternFunc.hpp"
+#include "../implementations/PointFunc.hpp"
+#include "../implementations/RectFunc.hpp"
 
 
 PYBIND11_MODULE(GSRoot, m) {
@@ -17,6 +20,15 @@ PYBIND11_MODULE(GSRoot, m) {
 
 // --- Color
 	load_Color(m);
+
+// --- Pattern
+	load_Pattern(m);
+
+// --- Point
+	load_PointEX(m);
+
+// --- Rect
+	load_RectEX(m);
 
 // --- Add bindings end -------------------------------------------------------------------
 }

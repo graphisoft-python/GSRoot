@@ -157,6 +157,9 @@
   <ItemGroup>
     <ClInclude Include="implementations\ColorFunc.hpp" />
     <ClInclude Include="implementations\GuidFunc.hpp" />
+    <ClInclude Include="implementations\PatternFunc.hpp" />
+    <ClInclude Include="implementations\PointFunc.hpp" />
+    <ClInclude Include="implementations\RectFunc.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>

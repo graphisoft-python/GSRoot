@@ -30,6 +30,15 @@
     <ClInclude Include="implementations\GuidFunc.hpp">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="implementations\PatternFunc.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="implementations\PointFunc.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="implementations\RectFunc.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

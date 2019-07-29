@@ -8,7 +8,7 @@ using namespace GS;
 using namespace Gfx;
 
 
-// --- Color -------------------------------------------------------------------------------
+// --- Color -----------------------------------------------------------------------------
 
 void load_Color(py::module m) {
 	py::class_<Color>(m, "Color")
@@ -41,9 +41,8 @@ void load_Color(py::module m) {
 		.def("GetAlpha", (UChar (Color::*)(void) const) &Color::GetAlpha)
 		.def(py::self == py::self)
 		.def(py::self != py::self)
-
 		.def("__str__", [](const Color &c) {
-		return "Color = ("+ std::to_string(c.GetAlpha()) + "," + std::to_string(c.GetRed()) + "," + std::to_string(c.GetGreen()) + "," + std::to_string(c.GetBlue())  +")"; });
-
+		return "Color = ("+ std::to_string(c.GetAlpha()) + "," + std::to_string(c.GetRed()) 
+			+ "," + std::to_string(c.GetGreen()) + "," + std::to_string(c.GetBlue())  +")"; });
 }
 

@@ -8,8 +8,8 @@ using namespace GS;
 
 
 // --- Guid -------------------------------------------------------------------------------
-static const Guid	EmptyGuid;
 
+static const Guid	EmptyGuid;
 void load_Guid(py::module m) {
 	py::class_<Guid>(m, "Guid")
 		.def_readonly_static("Empty", &EmptyGuid)
