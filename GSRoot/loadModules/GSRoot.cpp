@@ -6,6 +6,7 @@
 #include "../implementations/PatternFunc.hpp"
 #include "../implementations/PointFunc.hpp"
 #include "../implementations/RectFunc.hpp"
+#include "../implementations/PatternFunc.hpp"
 
 
 PYBIND11_MODULE(GSRoot, m) {

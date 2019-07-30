@@ -22,7 +22,10 @@ void load_PointEX(py::module m) {
 		.def("SetY", &Point<float>::SetY)
 		.def("Offset", &Point<float>::Offset)
 		.def(py::self == py::self)
-		.def(py::self != py::self);
+		.def(py::self != py::self)
+		.def("__str__", [](const Point<float> &p) {
+		return "Point = (" + std::to_string(p.GetX()) + "," + std::to_string(p.GetY()) + ")"; 
+		});
 
 	// --- ShortPoint ---------------------------------------------------------------------
 	py::class_<Point<short>>(m, "ShortPoint")
@@ -35,7 +38,10 @@ void load_PointEX(py::module m) {
 		.def("SetY", &Point<short>::SetY)
 		.def("Offset", &Point<short>::Offset)
 		.def(py::self == py::self)
-		.def(py::self != py::self);
+		.def(py::self != py::self)
+		.def("__str__", [](const Point<short> &p) {
+		return "Point = (" + std::to_string(p.GetX()) + "," + std::to_string(p.GetY()) + ")";
+		});
 
 	// --- NativeUnitPoint ----------------------------------------------------------------
 	py::class_<Point<DG::NativeUnit>>(m, "NativeUnitPoint")
