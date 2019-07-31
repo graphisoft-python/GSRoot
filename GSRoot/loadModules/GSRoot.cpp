@@ -7,7 +7,7 @@
 #include "../implementations/PointFunc.hpp"
 #include "../implementations/RectFunc.hpp"
 #include "../implementations/PatternFunc.hpp"
-
+#include "../implementations/CHFunc.hpp"
 
 PYBIND11_MODULE(GSRoot, m) {
 
@@ -16,20 +16,23 @@ PYBIND11_MODULE(GSRoot, m) {
 // --- Add bindings here ------------------------------------------------------------------
 
 
-// --- GSGuid
+	// --- GSGuid
 	load_Guid(m);
 
-// --- Color
+	// --- Color
 	load_Color(m);
 
-// --- Pattern
+	// --- Pattern
 	load_Pattern(m);
 
-// --- Point
+	// --- Point
 	load_PointEX(m);
 
-// --- Rect
+	// --- Rect
 	load_RectEX(m);
+
+	// --- CH
+	load_GSCharCode(m);
 
 // --- Add bindings end -------------------------------------------------------------------
 }

@@ -39,6 +39,9 @@
     <ClInclude Include="implementations\RectFunc.hpp">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="implementations\CHFunc.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
