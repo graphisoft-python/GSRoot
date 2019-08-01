@@ -19,7 +19,7 @@ void load_Pattern(py::module m) {
 				pat[i] = *it;
 				i++;
 			}
-			return Pattern(pat);
+			return new Pattern(pat);
 		}))
 		.def("IsEmpty", &Pattern::IsEmpty)
 		.def("IsFull", &Pattern::IsFull);

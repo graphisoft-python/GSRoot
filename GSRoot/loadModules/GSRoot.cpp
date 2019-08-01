@@ -15,7 +15,6 @@ PYBIND11_MODULE(GSRoot, m) {
 
 // --- Add bindings here ------------------------------------------------------------------
 
-
 	// --- GSGuid
 	load_Guid(m);
 
