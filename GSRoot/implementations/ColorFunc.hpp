@@ -11,7 +11,13 @@ using namespace Gfx;
 // --- Color -----------------------------------------------------------------------------
 
 void load_Color(py::module m) {
-	py::class_<Color>(m, "Color")
+	py::class_<Color>m_color(m, "Color");
+
+	py::enum_<Color::UShortSelector>(m_color, "UShortSelector")
+		.value("AsUShort", Color::UShortSelector::AsUShort)
+		.export_values();
+
+	m_color
 		.def_readonly_static("Black",&Color::Black)
 		.def_readonly_static("DarkGray", &Color::DarkGray)
 		.def_readonly_static("Gray", &Color::Gray)

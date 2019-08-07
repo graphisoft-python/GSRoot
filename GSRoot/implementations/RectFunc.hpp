@@ -2,8 +2,8 @@
 
 #include "../stdafx.h"
 
-#include "DGUtility.hpp"
-#include "Point.hpp"
+//#include "DGUtility.hpp"
+//#include "Point.hpp"
 #include "Rect.hpp"
 
 using namespace GS;
