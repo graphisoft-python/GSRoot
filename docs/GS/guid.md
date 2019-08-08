@@ -16,6 +16,7 @@ __lt__(self,Guid) -> bool
 __gt__(self,Guid) -> bool
 __le__(self,Guid) -> bool
 __ge__(self,Guid) -> bool
+__str__(self) -> unicode
 
 Clear(self) -> None
 ToUniString(self) -> unicode
@@ -30,4 +31,10 @@ GetHashValue(self) -> ushort
 GetPrefix(self) -> uint32
 SetPrefix(self,uint32) -> None
 
+```
+
+## Static Property
+
+```
+Empty -> Guid
 ```
