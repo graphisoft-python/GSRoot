@@ -1,40 +1,38 @@
-# Class Guid
+# Class GSRoot.Guid
 
 ## Inherit
 
 * object
-
 
 ## Methods
 
 ```
 __init__(self) -> None
 __init__(self,unicode) -> None
-__eq__(self,Guid) -> bool
-__ne__(self,Guid) -> bool
-__lt__(self,Guid) -> bool
-__gt__(self,Guid) -> bool
-__le__(self,Guid) -> bool
-__ge__(self,Guid) -> bool
+__eq__(self,GSRoot.Guid) -> bool
+__ne__(self,GSRoot.Guid) -> bool
+__lt__(self,GSRoot.Guid) -> bool
+__gt__(self,GSRoot.Guid) -> bool
+__le__(self,GSRoot.Guid) -> bool
+__ge__(self,GSRoot.Guid) -> bool
 __str__(self) -> unicode
 
 Clear(self) -> None
 ToUniString(self) -> unicode
 ConvertFromString(self,unicode) -> bool
 ConvertFromPrefixString(self,unicode) -> bool
-Invert(self) -> Guid
-IsEqual(self,Guid) -> bool
+Invert(self) -> GSRoot.Guid
+IsEqual(self,GSRoot.Guid) -> bool
 IsNull(self) ->bool
-Compare(self,Guid) -> int32
-HasPrefix(self,uint32) -> bool
-GetHashValue(self) -> ushort
-GetPrefix(self) -> uint32
-SetPrefix(self,uint32) -> None
-
+Compare(self,GSRoot.Guid) -> int32
+HasPrefix(self,int) -> bool
+GetHashValue(self) -> int
+GetPrefix(self) -> int
+SetPrefix(self,int) -> None
 ```
 
 ## Static Property
 
 ```
-Empty -> Guid
+Empty -> GSRoot.Guid
 ```

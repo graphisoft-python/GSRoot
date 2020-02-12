@@ -1,23 +1,22 @@
-# Class FloatRect
+# Class GSRoot.FloatRect
 
 ## Inherit
 
 * object
-
 
 ## Methods
 
 ```
 __init__(self) -> None
 __init__(self,float,float,float,float) -> None
-__init__(self,FloatPoint) -> None
-__eq__(self,FloatRect) -> bool
-__ne__(self,FloatRect) -> bool
+__init__(self,GSRoot.FloatPoint) -> None
+__eq__(self,GSRoot.FloatRect) -> bool
+__ne__(self,GSRoot.FloatRect) -> bool
 __str__(self) -> unicode
 
 Reset(self) -> None
 Set(self,float,float,float,float) -> None
-Set(self,FloatPoint) -> None
+Set(self,GSRoot.FloatPoint) -> None
 SetWithSize(self,float,float,float,float) -> None
 
 GetLeft(self) -> float
@@ -38,19 +37,19 @@ Resize(self,float,float) -> None
 Inset(self,float,float) -> None
 Offset(self,float,float) -> None
 
-IsOverlapping(self,FloatRect) -> bool
+IsOverlapping(self,GSRoot.FloatRect) -> bool
 IsInside(self,float,float) -> bool
-IsInside(self,FloatPoint) -> bool
-IsInside(self,FloatRect) -> bool
-IsOutside(self,FloatRect) -> bool
+IsInside(self,GSRoot.FloatPoint) -> bool
+IsInside(self,GSRoot.FloatRect) -> bool
+IsOutside(self,GSRoot.FloatRect) -> bool
 IsEmpty(self) -> bool
 
-Union(self,FloatRect) -> FloatRect
-Union(self,FloatPoint) -> FloatRect
-Intersection(self,FloatRect) -> FloatRect
+Union(self,GSRoot.FloatRect) -> GSRoot.FloatRect
+Union(self,GSRoot.FloatPoint) -> GSRoot.FloatRect
+Intersection(self,GSRoot.FloatRect) -> GSRoot.FloatRect
 
-Unify(self,FloatRect) -> None
-Unify(self,FloatPoint) -> None
-Intersect(self,FloatRect) -> None
+Unify(self,GSRoot.FloatRect) -> None
+Unify(self,GSRoot.FloatPoint) -> None
+Intersect(self,GSRoot.FloatRect) -> None
 
 ```

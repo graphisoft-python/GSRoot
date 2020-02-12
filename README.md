@@ -1,24 +1,31 @@
 # GSRoot
 
-## About
+## Documentation
 
-The GSRoot project is mainly for the interface of the GSRoot namespace of the Archicad C++ API.
+* [Color](./docs/Color.md)
+* [GSCharCode](./docs/GSCharCode.md)
 
-## Docs
+### Namespace GS
 
-### Class
+#### Guid
 
 * [Guid](./docs/GS/guid.md)
-* [Color](./docs/GS/Color.md)
-* [Pattern](./docs/GS/Pattern.md)
+
+#### Point
+
 * [FloatPoint](./docs/GS/FloatPoint.md)
 * [ShortPoint](./docs/GS/ShortPoint.md)
-* [NativeUnitPoint](./docs/GS/NativeUnitPoint.md)
+
+#### Rect
+
 * [FloatRect](./docs/GS/FloatRect.md)
 * [ShortRect](./docs/GS/ShortRect.md)
-* [NativeUnitRect](./docs/GS/NativeUnitRect.md)
-* [GSCharCode](./docs/GS/GSCharCode.md)
 
+### Namespace Gfx
+
+#### Pattern
+
+* [Pattern](./docs/Gfx/Pattern.md)
 
 ## Help Us
 

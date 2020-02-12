@@ -4,23 +4,21 @@
 
 * object
 
-
 ## Methods
 
 ```
 __init__(self) -> None
-__init__(self,short,short) -> None
-__eq__(self,ShortPoint) -> bool
-__ne__(self,ShortPoint) -> bool
+__init__(self,int,int) -> None
+__eq__(self,GSRoot.ShortPoint) -> bool
+__ne__(self,GSRoot.ShortPoint) -> bool
 __str__(self) -> unicode
 
-Set(self,short,short) -> None
-Offset(self,short,short) -> None
+Set(self,int,int) -> None
+Offset(self,int,int) -> None
 
-SetX(self,short) -> None
-SetY(self,short) -> None
+SetX(self,int) -> None
+SetY(self,int) -> None
 
-GetX(self) -> short
-GetY(self) -> short
-
+GetX(self) -> int
+GetY(self) -> int
 ```

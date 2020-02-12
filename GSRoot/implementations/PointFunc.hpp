@@ -44,16 +44,16 @@ void load_PointEX(py::module m) {
 		});
 
 	// --- NativeUnitPoint ----------------------------------------------------------------
-	py::class_<Point<DG::NativeUnit>>(m, "NativeUnitPoint")
-		.def(py::init<>())
-		.def(py::init<DG::NativeUnit &, DG::NativeUnit &>())
-		.def("Set", &Point<DG::NativeUnit>::Set)
-		.def("GetX", &Point<DG::NativeUnit>::GetX)
-		.def("GetY", &Point<DG::NativeUnit>::GetY)
-		.def("SetX", &Point<DG::NativeUnit>::SetX)
-		.def("SetY", &Point<DG::NativeUnit>::SetY)
-		.def("Offset", &Point<DG::NativeUnit>::Offset)
-		.def(py::self == py::self)
-		.def(py::self != py::self);
+	//py::class_<Point<DG::NativeUnit>>(m, "NativeUnitPoint")
+	//	.def(py::init<>())
+	//	.def(py::init<DG::NativeUnit &, DG::NativeUnit &>())
+	//	.def("Set", &Point<DG::NativeUnit>::Set)
+	//	.def("GetX", &Point<DG::NativeUnit>::GetX)
+	//	.def("GetY", &Point<DG::NativeUnit>::GetY)
+	//	.def("SetX", &Point<DG::NativeUnit>::SetX)
+	//	.def("SetY", &Point<DG::NativeUnit>::SetY)
+	//	.def("Offset", &Point<DG::NativeUnit>::Offset)
+	//	.def(py::self == py::self)
+	//	.def(py::self != py::self);
 }
 

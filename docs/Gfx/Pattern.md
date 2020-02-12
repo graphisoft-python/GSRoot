@@ -4,14 +4,12 @@
 
 * object
 
-
 ## Methods
 
 ```
 __init__(self) -> None
-__init__(self,List[uint8[8]]) -> None
+__init__(self,List[int]) -> None
 
 IsEmpty(self) -> bool
 IsFull(self) -> bool
-
 ```
