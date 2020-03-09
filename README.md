@@ -4,22 +4,14 @@
 
 * [Color](./docs/Color.md)
 * [GSCharCode](./docs/GSCharCode.md)
+* [Point](./docs/Point.md)
+* [Rect](./docs/Rect.md)
 
 ### Namespace GS
 
 #### Guid
 
 * [Guid](./docs/GS/guid.md)
-
-#### Point
-
-* [FloatPoint](./docs/GS/FloatPoint.md)
-* [ShortPoint](./docs/GS/ShortPoint.md)
-
-#### Rect
-
-* [FloatRect](./docs/GS/FloatRect.md)
-* [ShortRect](./docs/GS/ShortRect.md)
 
 ### Namespace Gfx
 
