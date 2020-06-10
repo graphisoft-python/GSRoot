@@ -80,8 +80,8 @@ void load_RectEX(py::module m) {
 		.def("IsIntersecting", &adapter::Rect::IsIntersecting)
 
 		.def("__str__", [](const adapter::Rect &r) {
-		return "Rect = (" + std::to_string(r.GetTop()) + "," + std::to_string(r.GetLeft())
-			+ "," + std::to_string(r.GetRight()) + "," + std::to_string(r.GetBottom()) + ")"; });
+		return "Rect = (" + std::to_string(r.GetLeft()) + "," + std::to_string(r.GetTop())
+			+ "," + std::to_string(r.GetWidth()) + "," + std::to_string(r.GetHeight()) + ")"; });
 
 }
 
