@@ -70,7 +70,7 @@ void load_RectEX(py::module m) {
 		.def("GetLeftBottom", &adapter::Rect::GetLeftBottom)
 		.def("SetRightTop", &adapter::Rect::SetRightTop)
 		.def("GetRightTop", &adapter::Rect::GetRightTop)
-		.def("SetRightBottom", &adapter::Rect::GetRightBottom)
+		.def("GetRightBottom", &adapter::Rect::GetRightBottom)
 		.def("SetCenter", &adapter::Rect::SetCenter)
 		.def("GetCenter", &adapter::Rect::GetCenter)
 		.def("Move", &adapter::Rect::Move)
